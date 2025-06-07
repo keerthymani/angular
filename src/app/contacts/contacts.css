@@ -1,0 +1,19 @@
+h3 {
+  color: rgb(100, 100, 163);
+  margin: 10px;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

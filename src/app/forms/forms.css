@@ -1,0 +1,63 @@
+.head {
+  max-width: 300px;
+  margin: auto;
+  padding-top: 50px;
+  color: rgb(64, 64, 119);
+  margin-top: 100px;
+  padding: 20px 20px;
+  background-color: rgb(141, 141, 224);
+  border-radius: 10px;
+}
+span{
+  color: red;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(64, 64, 119);
+  font-size: 25px;
+}
+table {
+  margin-left: 170px;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 50px;
+  color: rgb(64, 64, 119);
+  margin-top: 100px;
+  padding: 20px 20px;
+  background-color: rgb(141, 141, 224);
+}
+hr {
+  margin-top: 40px;
+}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+}
+button {
+  margin-left: 120px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+label {
+  margin-left: 20px;
+}
+input {
+  width: 250px;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-left: 20px;
+}

@@ -1,0 +1,15 @@
+h1 {
+  color: rgb(109, 109, 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  text-align: center;
+  padding-top: 50px;
+}
+.home img {
+  border-radius: 8px;
+  width: 500px;
+  height: 5 00px;
+}

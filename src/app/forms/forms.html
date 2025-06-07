@@ -1,0 +1,69 @@
+<div class="head">
+  <h2>Registration Form</h2>
+
+<form (ngSubmit)="onRegister(userForm)" #userForm="ngForm">
+
+    <label>Name : <span>*</span></label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="user.name"
+      required
+      pattern="^[a-zA-Z]+$"
+    #name="ngModel"
+  />
+  <div *ngIf="name.invalid && name.touched" style="color:black">
+    This field only accepts letters<span>*</span>
+  </div>
+
+  <br /><br />
+    <label>Email : <span>*</span></label>
+    <input
+      type="email"
+      name="email"
+     [(ngModel)]="user.email"
+     required
+    email
+    #email="ngModel"
+    />
+    <div *ngIf="email.invalid && email.touched" style="color:black">
+    This field only accepts emails<span>*</span>
+  </div>
+    <br /><br />
+    <label>Age : <span>*</span></label>
+    <input
+      type="number"
+      name="age"
+      [(ngModel)]="user.age"
+      required
+    min="0"  max="999"
+    #age="ngModel"
+  />
+  <div *ngIf="age.invalid && age.touched" style="color:black">
+       This field only accepts numbers upto 3 digits<span>*</span>
+  </div>
+  <br /><br />
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+<hr />
+
+<h3>Registered Users</h3>
+<table *ngIf="users.length > 0 ">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users">
+      <td>{{ u.name }}</td>
+      <td>{{ u.email }}</td>
+      <td>{{ u.age }}</td>
+    </tr>
+  </tbody>
+</table>
+

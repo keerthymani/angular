@@ -1,0 +1,18 @@
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding-left: 30px;
+  color: rgb(63, 63, 147);
+  margin: 0;
+}
+p {
+  padding-left: 50px;
+  font-size: 18px;
+  margin: 0;
+}
+h4 {
+  padding-left: 12px;
+  font-size: 20px;
+  margin: 15px;
+  color: rgb(63, 63, 147);
+}
