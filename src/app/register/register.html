@@ -1,0 +1,13 @@
+<div class="register"> 
+  <h2>User Login Registeration</h2>
+    <form (ngSubmit)="onRegister()">
+        <label for="name">Name :     
+            <input [(ngModel)]="name" name="name" placeholder="Name" required></label><br><br>
+       <label for="name">Username :
+            <input [(ngModel)]="username" name="username" placeholder="Username" required></label><br><br>
+       <label for="name">Password :
+            <input [(ngModel)]="password" name="password" placeholder="Password" type="password" required></label><br><br>
+      <button type="submit">Register</button>
+    </form>
+    <p *ngIf="error" style="color:red">{{ error }}</p>
+</div>

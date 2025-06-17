@@ -1,0 +1,28 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px;
+    border: 2px;
+    border-radius: 5px;
+    background-color: rgb(141, 141, 224);
+}
+button{
+  margin-left: 100px;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 17px; 
+  border-radius: 2px;
+  border: none;
+  color: rgb(64, 64, 119);
+  margin-bottom: 20px;
+}
+h2{
+    font-size: 32px;
+    color: rgb(64, 64, 119);
+}
+label{
+    color: rgb(64, 64, 119);
+    font-size: 18px;
+}

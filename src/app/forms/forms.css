@@ -27,21 +27,17 @@ table {
   margin-top: 100px;
   padding: 20px 20px;
   background-color: rgb(141, 141, 224);
-}
-hr {
-  margin-top: 40px;
-}
-table {
   border: 2px solid black;
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
 }
-th,
-td {
+hr {
+  margin-top: 40px;
+}
+th,td {
   border: 2px solid black;
   padding: 8px;
-  text-align: left;
 }
 button {
   margin-left: 120px;

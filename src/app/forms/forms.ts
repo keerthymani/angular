@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
+
 @Component({
   selector: 'app-forms',
   standalone: true,
@@ -14,6 +15,7 @@ export class Forms {
 
   users: any[] = [];
 onRegister(form: NgForm) {
+  console.log(form)
     if (form.invalid) {
       alert("Your Form is invalid.Please fill all the required fields");
       return;
@@ -29,4 +31,5 @@ onRegister(form: NgForm) {
 
     form.resetForm();
   }
+
 }

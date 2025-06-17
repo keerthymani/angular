@@ -1,8 +1,16 @@
 <div class="header">
-<nav>
-<a routerLink="/home">home</a>
-<a routerLink="/about">about</a>
-<a routerLink="/contacts">contacts</a>
-<a routerLink="/form">form</a>
-</nav></div>
-<router-outlet />
+  <nav>
+    <ng-container *ngIf="!(Serv.currentUser$ | async); 
+    else loggedIn">
+      <a routerLink="register">Register</a>
+      <a routerLink="login">Login</a>
+    </ng-container>
+     <ng-template #loggedIn>
+      <a routerLink="home">Home</a>
+      <a routerLink="about">About</a>
+      <a routerLink="contacts">Contacts</a>
+      <a routerLink="form">Form</a>
+    </ng-template>
+  </nav>
+</div>
+<router-outlet></router-outlet>
